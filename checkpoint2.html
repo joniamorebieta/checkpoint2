@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 2.1</title>
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: #73dab2;
+        }
+
+        .flex {
+            margin: 10px;
+        }
+
+        /* Flexbox 1 */
+        .flexOne {
+            display: flex;
+        }
+
+        .flexOne .square {
+            margin: 5px;
+        }
+
+        /* Flexbox 2 */
+        .flexTwo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flexTwo .square {
+            margin: 2px;
+        }
+
+        /* Flexbox 3 */
+        .flexThree {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        .flexThree .square {
+            margin: 2px;
+        }
+
+        /* Flexbox 4 */
+        .flexFour {
+            display: flex;
+            width: 350px;
+            flex-wrap: wrap;
+        }
+
+        .flexFour .square {
+            margin: 5px;
+            background-color: #3d8b6d;
+        }
+
+        /* Flexbox 5 */
+        .flexFive {
+            display: flex;
+            width: 350px;
+        }
+
+        .flexFive .item {
+            background-color: #0b6643;
+            width: 100px;
+            height: 100px;
+            margin: 2px;
+        }
+
+        #grow {
+            flex-grow: 2;
+        }
+
+        /* Flexbox 6 */
+        .flexSix {
+            display: flex;
+            height: 400px;
+            width: 500px;
+            background-color: #f1f1f1;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .flexSix .one {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flexSix .two {
+            display: flex;
+            justify-content: space-between;
+            background-color: #d6d6d6;
+        }
+
+        .flexSix .three {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        /* Flexbox 7 */
+        .flexSeven {
+            display: flex;
+            height: 400px;
+            width: 500px;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .flexSeven .one {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .flexSeven .two {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .flexSeven .three {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .flexSeven .four {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Flexbox 8 */
+        .flexEight {
+            display: flex;
+            height: 400px;
+            width: 300px;
+            background-color: #eee;
+        }
+
+        .flexEight .one {
+            display: flex;
+            align-items: center;
+        }
+
+        .flexEight .two {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .flexEight .three {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /* Flexbox 9 */
+        .flexNine {
+            display: flex;
+            width: 450px;
+            height: 250px;
+            background-color: #eee;
+            align-items: start;
+            justify-content: space-around;
+        }
+
+        #special {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Checkpoint 2.1</h1>
+    <h2>Flexbox 1</h2>
+    <div class="flex flexOne">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <h2>Flexbox 2</h2>
+    <div class="flex flexTwo">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <h2>Flexbox 3</h2>
+    <div class="flex flexThree">
+        <div class="square">1</div>
+        <div class="square">2</div>
+        <div class="square">3</div>
+    </div>
+    <h2>Flexbox 4</h2>
+    <div class="flex flexFour">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <h2>Flexbox 5</h2>
+    <div class="flex flexFive">
+        <div class="item"></div>
+        <div class="item" id="grow"></div>
+        <div class="item"></div>
+    </div>
+    <h2>Flexbox 6</h2>
+    <div class="flex flexSix">
+        <div class="one">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="two">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="three">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+    <h2>Flexbox 7</h2>
+    <div class="flex flexSeven">
+        <div class="one">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="two">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="three">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="four">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+    <h2>Flexbox 8</h2>
+    <div class="flex flexEight">
+        <div class="one">
+            <div class="square"></div>
+        </div>
+        <div class="two">
+            <div class="square"></div>
+        </div>
+        <div class="three">
+            <div class="square"></div>
+        </div>
+    </div>
+    <h2>Flexbox 9</h2>
+    <div class="flex flexNine">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square" id="special"></div>
+        <div class="square"></div>
+    </div>
+</body>
+
+</html>
